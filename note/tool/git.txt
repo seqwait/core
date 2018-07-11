@@ -21,6 +21,9 @@ git commit -m "first commit"
 git push -u origin master
 =>将当前分支推送到origin主机的对应分支
 git push origin master  
-
+=>查看日志
+$ git log --pretty=oneline
+=>回退到指定版本
+git reset --hard ed2d096878df096c2a5c89313f2aa2ee12bc57a8
 
 

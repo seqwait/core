@@ -27,7 +27,7 @@ $ git log --pretty=oneline
 git reset --hard ed2d096878df096c2a5c89313f2aa2ee12bc57a8
 =>比较不同
 git diff ed2d096878df096c2a5c89313f2aa2ee12bc57a8 ed2d096878df096c2a5c89313f2aa2ee12bc57a8
-=>添加gbk支持
-set fileencoding=gbk;
+=>提交编码设置
+i18n.commitencoding=utf-8
 
 

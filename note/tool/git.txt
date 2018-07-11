@@ -1,0 +1,26 @@
+=>查看配置
+git config --list
+=>每次 Git 提交时都会引用这两条信息，说明是谁提交了更新，所以会随更新内容一起被永久纳入历史记录,如果是单个项目,要去掉 --global
+git config --global user.name "seqwait"  
+git -config --global user.email "1143879729@qq.com"
+=>转到目录
+git cd /e/gift/core
+=>初始化本地仓库
+git init
+=>生成密钥
+ssh-keygen -t rsa -C "1143879729@qq.com" =>注册邮箱
+=>验证是否成功
+ssh -T git@github.com yes
+=>同步远程仓库
+git pull origin master
+=>开始推送(要新建文件)
+touch aa.txt
+git add aa.txt
+git commit -m "first commit"
+=>将本地的master分支推送到origin主机，同时指定origin(可以在git仓库config查看配置)为默认主机，后面就可以不加任何参数使用git push了
+git push -u origin master
+=>将当前分支推送到origin主机的对应分支
+git push origin master  
+
+
+
